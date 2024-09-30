@@ -1,5 +1,7 @@
 package com.example.BookMyShow.models.constants;
 
-public enum AuditoriumFeatures {
+public enum AuditoriumFeature {
+
+    IMAX,DOLBY,TWOD,THREED;
 
 }
