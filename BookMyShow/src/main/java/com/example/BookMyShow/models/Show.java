@@ -10,20 +10,20 @@ import java.util.*;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "bms_show")
 public class Show extends BaseModel{
 
     private LocalDateTime startTime;
     private LocalDateTime endTime;
 
-    // @ManyToOne
-    // private Movie movie;
+    @ManyToOne
+    private Movie movie;
 
     @ManyToOne
     private Auditorium auditorium;
 
-    // private List<ShowSeats> showseats;
-
+    @OneToMany
+    private List<ShowSeats> showseats;
 
     
 }

@@ -1,2 +1,6 @@
-package com.example.BookMyShow.models.constants;public class SeatType {
+package com.example.BookMyShow.models.constants;
+
+public enum SeatType {
+
+    SILVER, GOLD, PLATINUM;
 }

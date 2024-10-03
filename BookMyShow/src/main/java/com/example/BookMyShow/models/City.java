@@ -9,7 +9,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "City")
+@Entity(name = "city")
 public class City extends BaseModel{
     private String cityName;
 

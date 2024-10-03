@@ -1,2 +1,5 @@
-package com.example.BookMyShow.models.constants;public class PaymentStatus {
+package com.example.BookMyShow.models.constants;
+
+public enum PaymentStatus {
+    PAID, UNPAID, INPROGRESS;
 }

@@ -14,7 +14,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "auditorium")
 public class Auditorium extends BaseModel{
 
     private String name;
@@ -24,8 +24,8 @@ public class Auditorium extends BaseModel{
 
     private int capacity;
 
-    // @OneToMany
-    // private List<Seat> seats;
+     @OneToMany
+     private List<Seat> seats;
 
     @ElementCollection
     @Enumerated(EnumType.STRING)

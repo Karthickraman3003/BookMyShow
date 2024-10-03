@@ -9,7 +9,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity(name = "Theatre")
+@Entity(name = "theatre")
 public class Theatre extends BaseModel{
     
     private String name;

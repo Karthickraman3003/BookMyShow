@@ -1,4 +1,4 @@
-package com.example.BookMyShow.models.constants;
+package com.example.BookMyShow.models;
 
 import com.example.BookMyShow.models.BaseModel;
 import com.example.BookMyShow.models.Seat;
@@ -11,7 +11,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@Entity
+@Entity(name = "showseats")
 public class ShowSeats extends BaseModel {
 
     private int price;
@@ -20,7 +20,7 @@ public class ShowSeats extends BaseModel {
     private Seat seat;
     @ManyToOne
     private Show show;
-    @ElementCollection
+
     @Enumerated(EnumType.STRING)
     private ShowSeatStatus showSeatStatus;
 
